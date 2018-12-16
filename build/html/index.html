@@ -1,0 +1,191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Jeffjar’s Notes on Biochemistry &mdash; Jeffjar&#39;s Biochemistry Notes</title>
+    
+    <link rel="stylesheet" href="_static/pyramid.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="top" title="Jeffjar&#39;s Biochemistry Notes" href="#" />
+    <link rel="next" title="Statistical Mechanics" href="statmech.html" />
+<!--[if lte IE 6]>
+<link rel="stylesheet" href="_static/ie6.css" type="text/css" media="screen" charset="utf-8" />
+<![endif]-->
+
+  </head>
+  <body>
+
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="statmech.html" title="Statistical Mechanics"
+             accesskey="N">next</a> |</li>
+        <li><a href="#">Jeffjar&#39;s Biochemistry Notes</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="jeffjar-s-notes-on-biochemistry">
+<h1>Jeffjar&#8217;s Notes on Biochemistry<a class="headerlink" href="#jeffjar-s-notes-on-biochemistry" title="Permalink to this headline">¶</a></h1>
+<p>How do cells work? How does life-like behavior emerge out of the wigglings and jigglings of floppy molecules? Biochemistry tells the remarkable story of how life is created out of the hard laws of physics &#8211; often in crafty, surprising, and beautiful ways. For many years, I&#8217;ve been puzzled by Nature&#8217;s magical inner workings, and over the course of my undergrad, I&#8217;ve developed my own viewpoint on biochemistry, based on statistical mechanics and physics-flavored thinking.</p>
+<p>I&#8217;m writing up a few notes on biochemistry for a number of reasons:</p>
+<ul class="simple">
+<li>to share my fascination of Nature&#8217;s marvels!</li>
+<li>to practice clear scientific writing.</li>
+<li>to refresh and solidify my own understanding of biochemistry.</li>
+<li>to put out my quirky but careful scientific reasoning.</li>
+</ul>
+<p><em>Who&#8217;s my target audience?</em> Well, I think I&#8217;ll target the most natural audience: a younger version of myself who&#8217;s just at the brink of learning biochemistry. (Writing for a mini-jeffjar will also let my own scientific voice shine through!) Back then, I had a cursory knowledge of statistical mechanics, and I could recognize basic organic molecules, but not much more, I think. So in these notes, I&#8217;ll build off that knowledge, and I&#8217;ll include any relevant background beyond introductory physics and organic chemistry.</p>
+<p>I hope these notes will be enjoyable to read.
+~ jeffjar, December 2018.</p>
+<div class="section" id="outline">
+<h2>Outline<a class="headerlink" href="#outline" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Statistical Mechanics<ul>
+<li>Motivation: This governs what life can do and cannot do!</li>
+<li>Fundamental assumptions and enembles; philosophy about timescales</li>
+<li>Equilibrium vs steady-state</li>
+<li>The Boltzman factor and free energy; binding affinities</li>
+<li>Free-energy-couples and ATP; overall energy flow</li>
+<li>Concentrations, entropy, chemical potentials?</li>
+<li>Diffusion and fluctuations</li>
+</ul>
+</li>
+<li>Protein structure and dynamics<ul>
+<li>Motivation: The building blocks of cellular machines</li>
+<li>Amino acid structure and chemistry</li>
+<li>1,2,3,4 structure and &#8220;the folding question&#8221;</li>
+<li>Lengthscales and timescales. Dynamics, energetics, etc.</li>
+</ul>
+</li>
+<li>Cellular structure<ul>
+<li>Motivation: What are the parts of the puzzle?</li>
+<li>Central dogma, cellular components. Basic lengthscales/timescales.</li>
+<li>DNA/RNA structure and function. Physical properties, free energy challenges.</li>
+<li>Lipid physical chemistry.</li>
+<li>&#8220;Macromolecular crowding&#8221; and the cellular interior.</li>
+</ul>
+</li>
+<li>Enzymology<ul>
+<li>Motivation: How does biology do chemistry?</li>
+<li>Michaelis-Menten kinetics (phenomenology).</li>
+<li>Bells&#8217;n&#8217;whistles: inhibition, multi-step, multi-substrate, cooperativity, etc.</li>
+<li>P.chem theories of catalysis.</li>
+<li>Philosophy of &#8220;switching ensembles&#8221; and the 2nd law?</li>
+<li>Examples of types of possible reactions. Co-factors.</li>
+</ul>
+</li>
+<li>Metabolism<ul>
+<li>Motivation: What exact chemistry underlies bioenergetics?</li>
+<li>Macro-scale catabolism/anabolism, extracting free energy from food.</li>
+<li>Themes of small chemical steps, specificity, regulation, localization, Delta-G coupling</li>
+<li>The canonical pathway: glycolysis/citric acid cycle/respiration. Redox chem, #&#8217;s.</li>
+<li>Glycolysis. G6P to keep inside cell. Regulation.</li>
+<li>Citric Acid Cycle. PDH as &#8220;quinary structure&#8221;. Ridiculous interior of mitochondria.</li>
+<li>Respiration. ATP synthase as a free-energy-couple.</li>
+</ul>
+</li>
+<li>More Metabolism<ul>
+<li>Motivation: Get a better sense of how Nature makes other things.</li>
+<li>Nucleobase biosynthesis</li>
+<li>Amino acid metabolism, the &#8220;ammonia problem&#8221;.</li>
+<li>Beta-oxidation, impossible chemistry.</li>
+<li>Gluconeogenesis and glycogen.</li>
+</ul>
+</li>
+<li>Signalling<ul>
+<li>GPCRs, cascades, amplification, cross-talk, timescales, logic, etc...</li>
+</ul>
+</li>
+<li>Transcription and Translation<ul>
+<li>What happens inside DNA polymerases and ribosomes</li>
+<li>Kinetic proofreading; bounds on accuracy, speed, energy usage.</li>
+</ul>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="statmech.html">Statistical Mechanics</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="#">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Jeffjar&#8217;s Notes on Biochemistry</a><ul>
+<li><a class="reference internal" href="#outline">Outline</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Next topic</h4>
+  <p class="topless"><a href="statmech.html"
+                        title="next chapter">Statistical Mechanics</a></p>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="statmech.html" title="Statistical Mechanics"
+             >next</a> |</li>
+        <li><a href="#">Jeffjar&#39;s Biochemistry Notes</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      Last updated on Dec 15, 2018.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+    </div>
+  </body>
+</html>
